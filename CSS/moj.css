@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+
+
+
+.formSend {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.formBox {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form {
+    color: white;
+    text-transform: uppercase;
+    display: none;
+}
+
+.squareOne {
+    margin-left: 30px;
+}
+
+.boxSquar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.boxSquar::before{
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    content: "";
+} 
+.progres {
+    position: absolute;
+    top:65%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 0%;
+    background-color: #ffcc33;
+    z-index: -1;
+    content: "";
+}
+
+
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; 
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+
+}
+
+.textSquare {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    margin: 10px 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.progresSquare {
+    background-color: #ffcc33;
+    border: 2px solid black;
+}
+
+.activeform {
+    display: flex;
+}
+
